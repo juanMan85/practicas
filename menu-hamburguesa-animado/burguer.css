@@ -1,0 +1,90 @@
+
+:root{
+     --colorIcono: rgba(28, 101, 140,.5); 
+    --colorIconoX:  rgb(28, 101, 140); 
+
+    /* --colorIcono: rgba(255,255,255, 0.5); 
+    --colorIconoX:  rgb(255,255,255); */
+
+    /* --colorIcono: rgba(255,0,255, 0.5); 
+    --colorIconoX:  rgb(255,0,255); */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    width: 100%;
+    height: 100vh;
+    background:#272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .contenedor{ 
+        height: 2.5rem;
+        width: 2.5rem;
+        border: 0.2rem solid var(--colorIcono); 
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+   
+        .linea{
+            width: 90%;
+            height: 0.2rem;
+            background-color: var(--colorIcono);
+            border-radius: 0.3rem;
+            transition: all 0.5s;
+            
+        }
+            .linea::before{
+                content: "";
+                position: absolute;
+                width: 90%;
+                height: 0.2rem;
+                background-color: var(--colorIcono);
+                border-radius: 0.3rem;
+                transform: translateY(9px);
+                transition: all 0.5s;
+                
+            }
+            .linea::after{
+                content: "";
+                position: absolute;
+                width: 90%;
+                height: 0.2rem;
+                background-color: var(--colorIcono);
+                border-radius: 0.3rem;
+                transform: translateY(-9px);
+                transition: all 0.7s;
+            }
+/*animacion al hacer click*/
+
+            .open{
+                background: transparent;
+                transition: all 0.4s;
+            }
+                .open::before{
+                    content: "";
+                    transform:rotate(-225deg);
+                    background-color: var(--colorIconoX);
+                    transition: all 1.2s;
+                }
+                .open::after{
+                    content: "";
+                    transform: rotate(225deg);    
+                    background-color: var(--colorIconoX);              
+                    transition: all 0.8s;   
+
+                }
+
+                
+                
