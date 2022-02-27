@@ -1,0 +1,64 @@
+:root{
+    --card-ancho : 20rem;
+    --card-alto : 30rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+  
+body{
+    background-color: #E0DDAA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: var(--card-ancho);
+        height: var(--card-alto);
+        border:3px solid #203239;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+    .card:hover{
+        transform: scale(1.1);
+        transform: rotate(5deg);
+        box-shadow: 1px 1px 10px black;
+    }
+        .card__inner-img{
+            background-image: url("/wolfgang-hasselmann-COb6HbexUxw-unsplash.jpg");
+            background-size:cover;
+            background-position-y: bottom; 
+            flex:auto;   
+            filter: brightness(90%);  
+        }
+        .card__inner-img:hover{
+            filter: brightness(130%);
+        }
+        .card__inner-text{
+            height: 35%;
+            padding: 5px;
+            background: #203239;
+            color: #E0DDAA;
+            font-family: sans-serif;
+        } 
+            .card__inner-text h2{
+               font-size: 1.5rem;
+                text-transform: uppercase;
+                font-weight: bold;  
+            }
+            .card__inner-text p{
+                font-size: 1rem;
+                line-height: 1.5rem;
+
+            }
+   
