@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: #35858B;
+    color: #072227;
+    font-family: sans-serif;
+    width: 100%;
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+.dark{
+    background-color: #072227;
+    color: aliceblue;
+}
+
+.contenedorSwich{
+    height: 2rem;
+    width: 5rem;
+    background-color: #072227;
+    border-radius: 3.5rem;
+    position: relative; 
+}
+.noche{
+    border: 0.1rem solid #AEFEFF;
+    background-color: #072227;
+}
+.botonSwich{
+    height: 1.8rem;
+    width: 1.8rem;
+    background-color:#AEFEFF ;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.1rem;
+    left: 0.1rem;
+    transition: all 0.5s;
+}
+.accionBoton{
+    transform: translateX(2.85rem);
+}
+

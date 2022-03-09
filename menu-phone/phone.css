@@ -28,7 +28,7 @@ body{
 .logo a{
     text-decoration: none;
     color:  aliceblue;
-    margin-left: 9.5rem;
+    margin-left: 6.5rem;
     font-size: 1.8rem;
     letter-spacing: 0.2rem;
 }
@@ -37,15 +37,13 @@ body{
     max-width: 8rem;
     height: 5rem;
     position: fixed;
-    top: 0;
+    top: 0.8rem;
     left: 1.5rem;
 }
 
 .burguer{
     height: 2.2rem;
     width: 2.2rem;
-    border: 1px solid red;
-    border-radius: 4px;
     display: none;
 }
 
@@ -90,8 +88,30 @@ body{
         position: fixed;
         right: 2rem;
         top: 2rem;
+        padding:0.9rem 0;
     }
-    
+    .burguer-inner{
+        height: 0.25rem;
+        background-color: aliceblue;
+        width: 100%;
+        position: relative;
+    }
+    .burguer-inner::before{
+        content: "";
+        height: 0.25rem;
+        background-color: aliceblue;
+        position: absolute;
+        width: 100%;
+        transform: translateY(0.7rem);
+    }
+    .burguer-inner::after{
+        content: "";
+        height: 0.25rem;
+        background-color: aliceblue;
+        position: absolute;
+        width: 100%;
+        transform: translateY(-0.7rem);
+    } 
     .nav__menu{
         flex-direction: column;
         position: fixed;
@@ -120,11 +140,12 @@ body{
 
 .logo a{
     font-size: 1.3rem;
-    margin-left:8rem ;
+    margin-left:5.3rem ;
 }
 .logo--img{
     max-width: 5rem;
     height: 4rem;
+    top: 0.6rem;
 }
 
 .burguer{
@@ -149,11 +170,12 @@ body{
 
 .logo a{
     font-size: 0.8rem;
-    margin-left:5.5rem;
+    margin-left:4.7rem;
 }
 .logo--img{
     max-width: 4rem;
     height: 3rem;
+    top: 0.5rem;
 }
 
 .burguer{
